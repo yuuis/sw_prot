@@ -6,8 +6,8 @@
 </template>
 
 <style lang="scss" scoped>
-$color: #00cf26;
-$background: #b8ffce;
+$color: orange;
+$background: gold;
 .member-register {
   margin-top: 85px;
   margin-right: 30px;

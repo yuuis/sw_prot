@@ -88,22 +88,23 @@ export default {
         {
           name: "東京",
           src:
-            "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gatigatitv/20180122/20180122231346.jpg"
+            // "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gatigatitv/20180122/20180122231346.jpg"
+            "https://bflove.com/hoikuen/img/img184se4856_1.jpg"
         },
         {
           name: "大阪",
           src:
-            "https://cdn.osaka-info.jp/cache/term_translation_600/2377484e-d8f7-11e8-91f5-0af0cba29dd8.jpeg"
+            "http://oheso-group.com/wp/wp-content/themes/oheso/img/top/img-top@2x.jpg"
         },
         {
           name: "京都",
           src:
-            "http://www.tabirai.net/tour/common/images/special/kouyou/026_kyoto/img_recommend_01.jpg"
+            "https://mirai.florence.or.jp/recruit/images/about01_2.jpg"
         },
         {
           name: "福岡",
           src:
-            "https://yokanavi.com/assets/uploads/2016/05/968936af990125a165ac2b61be99a93f-1440x960.jpg"
+            "https://www.akatsuki.net/img/hon1.jpg"
         }
       ]
     };
@@ -112,7 +113,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$color: #00cf26;
+$color: orange;
 .contents {
   width: 90%;
   margin: 20px auto;

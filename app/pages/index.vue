@@ -49,7 +49,7 @@ export default {
       border-radius: 5px;
       backdrop-filter: blur(3px);
       z-index: 2001;
-      border: 1px solid #00cf26;
+      border: 1px solid orange;
       h3 {
         text-align: left;
         margin-left: 20px;

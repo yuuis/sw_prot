@@ -5,7 +5,7 @@
 </template>
 
 <style lang="scss" scoped>
-$background: #b8ffce;
+$background: orange;
 .container {
   height: 60px;
   box-sizing: border-box;
