@@ -4,7 +4,7 @@
     <div class="breadcrumb">
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item :to="{ path: '/' }">TOP</el-breadcrumb-item>
-        <el-breadcrumb-item>PT計算</el-breadcrumb-item>
+        <el-breadcrumb-item>ユーザ情報登録</el-breadcrumb-item>
       </el-breadcrumb>
     </div>
     <el-row>

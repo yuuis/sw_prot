@@ -38,12 +38,14 @@
       <el-form-item label="年齢">
         <el-radio-group v-model="searchForm.age">
           <el-radio :label="0">0才</el-radio>
-          <el-radio :label="1">1才</el-radio>
-          <el-radio :label="2">2才</el-radio>
-          <el-radio :label="3">3才</el-radio>
-          <el-radio :label="4">4才</el-radio>
-          <el-radio :label="5">5才</el-radio>
-          <el-radio :label="6">6才</el-radio>
+          <el-radio :label="1">~1ヶ月</el-radio>
+          <el-radio :label="2">~3ヶ月</el-radio>
+          <el-radio :label="3">~5ヶ月</el-radio>
+          <el-radio :label="4">2才</el-radio>
+          <el-radio :label="5">3才</el-radio>
+          <el-radio :label="6">4才</el-radio>
+          <el-radio :label="7">5才</el-radio>
+          <el-radio :label="8">6才</el-radio>
         </el-radio-group>
       </el-form-item>
       <el-form-item label="設備">

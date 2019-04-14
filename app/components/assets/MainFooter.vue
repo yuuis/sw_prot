@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p>2019&nbsp;保育園さがす君</p>
+    <p>2019&nbsp;保育サーチ</p>
   </div>
 </template>
 

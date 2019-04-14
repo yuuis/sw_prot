@@ -4,7 +4,7 @@
     <div class="breadcrumb">
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item :to="{ path: '/' }">TOP</el-breadcrumb-item>
-        <el-breadcrumb-item :to="{ path: '/ptcalc' }">PT計算</el-breadcrumb-item>
+        <!-- <el-breadcrumb-item :to="{ path: '/ptcalc' }">PT計算</el-breadcrumb-item> -->
         <el-breadcrumb-item :to="{ path: '/search' }">保育園を探す</el-breadcrumb-item>
         <el-breadcrumb-item>検索結果</el-breadcrumb-item>
       </el-breadcrumb>

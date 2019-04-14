@@ -1,6 +1,6 @@
 <template>
   <div class="contents">
-    <h2>PT計算</h2>
+    <h2>ユーザ情報登録</h2>
     <el-form ref="form" :model="searchForm" label-width="120px" class="pt-form">
       <el-form-item label="職業">
         <el-select v-model="searchForm.job" placeholder="職業を選択してください">
@@ -21,7 +21,7 @@
         </el-select>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" @click="$router.push('/search')">計算結果を見る</el-button>
+        <el-button type="primary" @click="$router.push('/search')">登録する</el-button>
       </el-form-item>
     </el-form>
   </div>

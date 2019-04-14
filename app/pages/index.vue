@@ -6,9 +6,12 @@
         <recommend/>
       </el-col>
       <el-col :span="6">
-        <member/>
+        <!-- <member/> -->
         <div class="ptbutton">
-          <el-button type="primary" size="large" @click="$router.push('ptcalc')">PT計算</el-button>
+          <el-button type="primary" size="large" @click="$router.push('search')">詳しく検索する</el-button>
+        </div>
+        <div class="ptbutton">
+          <el-button type="primary" size="large" @click="$router.push('ptcalc')">ユーザ情報登録</el-button>
         </div>
       </el-col>
     </el-row>

@@ -32,18 +32,18 @@ export default {
     return {
       reviews: [
         {
-          imgsrc: "http://tutujigaoka.webcrow.jp/img/top.jpg",
+          imgsrc: "http://www.nakamoto-kk.co.jp/wp/wp-content/uploads/2014/09/005-e1410418558961.jpg",
           nursery: "つつじヶ丘保育園",
           name: "匿名ママ",
-          comment: "素晴らしい保育士さんばかりでした。",
-          like: 20,
+          comment: "　素晴らしい保育士さんばかりでした。",
+          like: 5,
           fav: false
         },
         {
           imgsrc: "http://www.mammys-angel.co.jp/common/img/img188gd5225_1.jpg",
-          nursery: "シャリカエ保育園",
+          nursery: "共励第二こども園",
           name: "専業主婦A",
-          comment: "専業主婦ですが、子供の自立のために探してみました。",
+          comment: "　専業主婦ですが、子供の自立のために探してみました。",
           like: 20,
           fav: false
         },
@@ -51,17 +51,17 @@ export default {
           imgsrc:
             "http://hakuai.ed.jp/hh/wp-content/uploads/2014/10/1a098d367cd268b2cbe0229a045a33d0-1.png",
           nursery: "三田区役所幼稚園",
-          name: "サザエさん",
-          comment: "ちゃーん。",
-          like: 20,
+          name: "匿名パパ",
+          comment: "　保育士さんはとてもよかったのですが、施設は少し古く、心配なところがありました。",
+          like: 40,
           fav: false
         },
         {
-          imgsrc: "",
-          nursery: "石黒幼稚園",
-          name: "石黒",
-          comment: "とてもいい場所でした",
-          like: 20,
+          imgsrc: "https://www1.lixil.co.jp/case/business/images/education_0052_img01.jpg",
+          nursery: "渋谷幼稚園",
+          name: "佐藤れおな",
+          comment: "　とてもいい場所でした",
+          like: 12,
           fav: false
         }
       ]
