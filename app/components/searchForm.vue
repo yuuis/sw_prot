@@ -26,6 +26,7 @@
           <el-checkbox label="こども園"></el-checkbox>
           <el-checkbox label="認可保育園"></el-checkbox>
           <el-checkbox label="非認可保育園"></el-checkbox>
+          <el-checkbox label="幼稚園"></el-checkbox>
         </el-checkbox-group>
       </el-form-item>
       <el-form-item label="公立/私立">
@@ -80,6 +81,7 @@ export default {
     };
   },
   methods: {
+
     search() {
       if (this.searchForm.area == "") return false;
       this.$router.push({

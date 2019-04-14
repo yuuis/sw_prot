@@ -10,7 +10,7 @@
       </el-breadcrumb>
     </div>
 
-    <el-row>
+    <el-row style="padding-bottom: 100px">
       <el-col :span="18">
         <iframe
           :src="$route.query.areaURL"

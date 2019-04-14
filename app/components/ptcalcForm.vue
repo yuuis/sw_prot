@@ -12,7 +12,8 @@
         </el-select>
       </el-form-item>
       <el-form-item label="年収">
-        <el-select v-model="searchForm.income">
+        <!-- <el-checkbox-group v-model="searchForm.type"> -->
+        <el-select>
           <el-option label="~300万円未満" value="-299"></el-option>
           <el-option label="300万以上、500万円未満" value="300-500"></el-option>
           <el-option label="500万以上、800万円未満" value="500-800"></el-option>
@@ -21,7 +22,7 @@
         </el-select>
       </el-form-item>
       <el-form-item label="就労時間(事業所)">
-        <el-select v-model="searchForm.income">
+        <el-select>
           <el-option label="週5日以上かつ1日8時間以上" value="5/8-"></el-option>
           <el-option label="週5日以上かつ1日6時間以上8時間未満" value="5/6-8"></el-option>
           <el-option label="週5日以上かつ1日4時間以上6時間未満" value="5/4-6"></el-option>
@@ -33,20 +34,20 @@
         </el-select>
       </el-form-item>
       <el-form-item label="就労時間(内職)">
-        <el-select v-model="searchForm.income">
+        <el-select>
           <el-option label="週5日以上かつ1日6時間以上" value="5/6-"></el-option>
           <el-option label="上記以外かつ月48時間以上" value="48"></el-option>
           <el-option label="当てはまるものはない" value="0"></el-option>
         </el-select>
       </el-form-item>
       <el-form-item label="出産">
-        <el-checkbox-group v-model="searchForm.type">
+        <el-checkbox-group>
           <el-checkbox label="保育実施期間は、出産予定月を中心に前後２か月（計５か月以内）"></el-checkbox><br>
           <el-checkbox label="妊娠初期及び中期に長期間にわたって安静が必要な場合"></el-checkbox><br>
         </el-checkbox-group>
       </el-form-item>
       <el-form-item label="疾病">
-        <el-checkbox-group v-model="searchForm.type">
+        <el-checkbox-group>
           <el-form-item label="入院">
             <el-checkbox label="おおむね１か月以上の入院をしている、又は入院を決定した者"></el-checkbox><br>
           </el-form-item>
@@ -63,14 +64,14 @@
         </el-checkbox-group>
       </el-form-item>
       <el-form-item label="障害">
-        <el-checkbox-group v-model="searchForm.type">
+        <el-checkbox-group>
           <el-checkbox label="身体障害者手帳１級・２級、愛の手帳１度～３度、精神障害者保健福祉手帳３級以上"></el-checkbox><br>
           <el-checkbox label="身体障害者手帳３級、愛の手帳４度"></el-checkbox><br>
           <el-checkbox label="身体障害者手帳４級"></el-checkbox><br>
         </el-checkbox-group>
       </el-form-item>
       <el-form-item label="介護">
-        <el-checkbox-group v-model="searchForm.type">
+        <el-checkbox-group>
           <el-form-item label="入院･施設等">
             <el-checkbox label="常時病院･施設等で付添介護を必要とする場合"></el-checkbox><br>
             <el-checkbox label="常時ではないが病院･施設等で付添を必要とする場合"></el-checkbox><br>
@@ -83,13 +84,13 @@
         </el-checkbox-group>
       </el-form-item>
       <el-form-item label="災害">
-        <el-checkbox-group v-model="searchForm.type">
+        <el-checkbox-group>
           <el-checkbox label="災害等による家屋の損傷、その他災害復旧のため保育に当たることができない場合"></el-checkbox><br>
         </el-checkbox-group>
       </el-form-item>
 
       <el-form-item label="その他">
-        <el-checkbox-group v-model="searchForm.type">
+        <el-checkbox-group>
           <el-form-item label="求職">
             <el-checkbox label="週５日以上就労し、８時間以上の就労を常態（おおむね月２０日以上）"></el-checkbox><br>
             <el-checkbox label="週３日以上就労し、６時間以上の就労で上記に該当しない場合"></el-checkbox><br>
@@ -110,7 +111,7 @@
       </el-form-item>
 
       <el-form-item label="加減要素">
-        <el-checkbox-group v-model="searchForm.type">
+        <el-checkbox-group>
           <el-checkbox label="父母共に、身体障害者手帳１級・２級、愛の手帳１度～３度、精神障害者保健福祉手帳１～３級が交付されている場合"></el-checkbox><br>
           <el-checkbox label="父又は母が、身体障害者手帳１級・２級、愛の手帳１度～３度、精神障害者保健福祉手帳１～３級が交付されている場合"></el-checkbox><br>
           <el-checkbox label="父母共に、不存在（長期入院を含む。）の場合"></el-checkbox><br>
@@ -131,12 +132,14 @@
           <el-checkbox label="同居の親族等が、補完的な保育にあたれる場合"></el-checkbox><br>
           <el-checkbox label="同一世帯内に保育園利用申込みをしていない兄弟姉妹がいる場合"></el-checkbox><br>
           <el-checkbox label="保護者のいずれかが、就労実績及び収入実績に整合性がないと判断される場合"></el-checkbox><br>
-          <el-checkbox label="過去３か月以上の保育料（区立保育室の保育料を含む。）の滞納（卒園児を含む。）がある場合"></el-checkbox><br>
+        </el-checkbox-group>
+          <el-checkbox-group v-model="searchForm.type">
+            <el-checkbox label="過去３か月以上の保育料（区立保育室の保育料を含む。）の滞納（卒園児を含む。）がある場合"></el-checkbox><br>
         </el-checkbox-group>
       </el-form-item>
 
       <el-form-item>
-        <el-button type="primary" @click="$router.push('/search')">保存する</el-button>
+        <el-button type="primary" @click="$router.push('/')">保存する</el-button>
       </el-form-item>
     </el-form>
   </div>
