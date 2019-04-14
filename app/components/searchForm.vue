@@ -8,7 +8,7 @@
       class="pt-form"
       @submit.native.prevent="search"
     >
-      <el-form-item label="エリア・駅" required>
+      <el-form-item label="市区町村" required>
         <el-select v-model="searchForm.area" placeholder="Select">
           <el-option
             v-for="opt in areaList"
@@ -37,7 +37,6 @@
       </el-form-item>
       <el-form-item label="年齢">
         <el-radio-group v-model="searchForm.age">
-          <el-radio :label="0">0才</el-radio>
           <el-radio :label="1">~1ヶ月</el-radio>
           <el-radio :label="2">~3ヶ月</el-radio>
           <el-radio :label="3">~5ヶ月</el-radio>

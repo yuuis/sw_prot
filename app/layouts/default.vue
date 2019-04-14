@@ -75,17 +75,18 @@ form {
 
 <style lang="scss" scoped>
 header {
+  margin-top: 10px;
   position: fixed;
-  width: 100%;
+  width: 80%;
   left: 0;
-  top: 0;
+  top: 0px;
   z-index: 1500;
   background: #fff;
 }
 main,
 aside {
   padding: 0;
-  margin-top: 80px;
+  margin-top: 150px;
 }
 footer {
   padding: 0;
@@ -110,5 +111,11 @@ main {
 
 aside {
   position: fixed;
+}
+
+section.el-container {
+  width: 80%;
+  margin-right: auto;
+  margin-left : auto;
 }
 </style>

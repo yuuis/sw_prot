@@ -1,13 +1,13 @@
 <template>
   <el-carousel :interval="5000" height="500px">
     <el-carousel-item v-for="item in nurseryImages" :key="item">
-      <img :src="item" alt>
+      <img :src="item" alt="main-image">
       <h3>{{ item }}</h3>
     </el-carousel-item>
     <div class="search-form">
       <el-form ref="form" :model="searchForm" label-width="120px" @submit.native.prevent="search">
         <h3>保育園を検索</h3>
-        <el-form-item label="エリア・駅" required>
+        <el-form-item label="市区町村" required>
           <el-select v-model="searchForm.area" placeholder="Select">
             <el-option
               v-for="opt in areaList"
@@ -31,7 +31,6 @@
   </el-carousel>
 </template>
 
-
 <script>
 import { mapState } from "vuex";
 export default {
@@ -44,8 +43,9 @@ export default {
       },
 
       nurseryImages: [
-        "http://angelchild.net/img/index_bigimg.jpg",
-        "http://kir302693.kir.jp/img/top/main_img.jpg"
+        // "http://angelchild.net/img/index_bigimg.jpg",
+        // "http://kir302693.kir.jp/img/top/main_img.jpg"
+        "https://cdn.pixabay.com/photo/2016/11/28/10/48/child-1864718_960_720.jpg"
       ]
     };
   },
@@ -72,6 +72,7 @@ $background: #b8ffce;
 
   .el-carousel {
     img {
+      // height: 1000px;
       width: 100%;
     }
 

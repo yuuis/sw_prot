@@ -2,7 +2,7 @@
   <div class="container">
     <h1>
       <a class="router-link-active" @click="$router.push('/')">
-        <span>保育サーチ</span>
+        <span style="">保育サーチ</span>
       </a>
     </h1>
     <el-menu :default-active="activeIndex" class="nav" mode="horizontal">

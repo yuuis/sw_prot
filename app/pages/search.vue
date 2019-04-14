@@ -1,10 +1,10 @@
 <template>
   <section class="container">
-    <search-header/>
+    <!-- <search-header/> -->
     <div class="breadcrumb">
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item :to="{ path: '/' }">TOP</el-breadcrumb-item>
-        <el-breadcrumb-item :to="{ path: '/ptcalc' }">PT計算</el-breadcrumb-item>
+        <!-- <el-breadcrumb-item :to="{ path: '/ptcalc' }">PT計算</el-breadcrumb-item> -->
         <el-breadcrumb-item>保育園を探す</el-breadcrumb-item>
       </el-breadcrumb>
     </div>
@@ -13,7 +13,7 @@
         <search-form/>
       </el-col>
       <el-col :span="6">
-        <member/>
+        <!-- <member/> -->
       </el-col>
     </el-row>
   </section>

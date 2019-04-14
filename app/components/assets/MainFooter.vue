@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p>2019&nbsp;保育サーチ</p>
+    <p style="font-size: smaller">@2019&nbsp;copyright GIZIRENAI All Rights Reserved.</p>
   </div>
 </template>
 
