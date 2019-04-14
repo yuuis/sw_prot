@@ -5,15 +5,15 @@
       <h3>{{ item }}</h3>
     </el-carousel-item>
     <div class="search-form">
-      <el-form ref="form" :model="searchForm" label-width="120px">
+      <el-form ref="form" :model="searchForm" label-width="120px" @submit.native.prevent="search">
         <h3>保育園を検索</h3>
-        <el-form-item label="エリア・駅">
+        <el-form-item label="エリア・駅" required>
           <el-select v-model="searchForm.area" placeholder="Select">
             <el-option
-              v-for="opt in formContents.areaOption"
+              v-for="opt in areaList"
               :key="opt.value"
               :label="opt.label"
-              :value="opt.value"
+              :value="opt.mapurl"
             ></el-option>
           </el-select>
         </el-form-item>
@@ -24,7 +24,7 @@
           <el-date-picker v-model="searchForm.month" type="month" placeholder="Pick a month"></el-date-picker>
         </el-form-item>
         <el-form-item style="text-align:right;">
-          <el-button type="primary">検索</el-button>
+          <el-button type="primary" native-type="submit">検索</el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -33,6 +33,7 @@
 
 
 <script>
+import { mapState } from "vuex";
 export default {
   data() {
     return {
@@ -45,25 +46,20 @@ export default {
       nurseryImages: [
         "http://angelchild.net/img/index_bigimg.jpg",
         "http://kir302693.kir.jp/img/top/main_img.jpg"
-      ],
-
-      formContents: {
-        areaOption: [
-          {
-            value: "八王子駅",
-            label: "八王子"
-          },
-          {
-            value: "池袋駅",
-            label: "池袋駅"
-          },
-          {
-            value: "新宿駅",
-            label: "新宿駅"
-          }
-        ]
-      }
+      ]
     };
+  },
+  methods: {
+    search() {
+      if (this.searchForm.area == "") return false;
+      this.$router.push({
+        path: "result",
+        query: { areaURL: this.searchForm.area }
+      });
+    }
+  },
+  computed: {
+    ...mapState(["areaList"])
   }
 };
 </script>

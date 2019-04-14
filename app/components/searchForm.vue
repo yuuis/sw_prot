@@ -1,7 +1,26 @@
 <template>
   <div class="contents">
     <h2>保育園を探す</h2>
-    <el-form ref="form" :model="searchForm" label-width="120px" class="pt-form">
+    <el-form
+      ref="form"
+      :model="searchForm"
+      label-width="120px"
+      class="pt-form"
+      @submit.native.prevent="search"
+    >
+      <el-form-item label="エリア・駅" required>
+        <el-select v-model="searchForm.area" placeholder="Select">
+          <el-option
+            v-for="opt in areaList"
+            :key="opt.value"
+            :label="opt.label"
+            :value="opt.mapurl"
+          ></el-option>
+        </el-select>
+      </el-form-item>
+      <el-form-item label="入園希望月">
+        <el-date-picker v-model="searchForm.month" type="month" placeholder="Pick a month"></el-date-picker>
+      </el-form-item>
       <el-form-item label="保育園">
         <el-checkbox-group v-model="searchForm.type">
           <el-checkbox label="こども園"></el-checkbox>
@@ -37,23 +56,39 @@
       </el-form-item>
 
       <el-form-item>
-        <el-button type="primary" @click="$router.push('/result')">検索結果を見る</el-button>
+        <el-button type="primary" native-type="submit">検索結果を見る</el-button>
       </el-form-item>
     </el-form>
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   data() {
     return {
       searchForm: {
+        area:
+          "https://www.google.com/maps/d/embed?mid=14pYTp5pZTDdRk8JfSjMMbtjQhoN9HkKp",
+        month: "",
         type: ["認可保育園", "", ""],
         belongs: ["公立", "", ""],
         age: 3,
         option: ["", "", "", ""]
       }
     };
+  },
+  methods: {
+    search() {
+      if (this.searchForm.area == "") return false;
+      this.$router.push({
+        path: "result",
+        query: { areaURL: this.searchForm.area }
+      });
+    }
+  },
+  computed: {
+    ...mapState(["areaList"])
   }
 };
 </script>

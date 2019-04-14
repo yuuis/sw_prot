@@ -13,7 +13,7 @@
     <el-row>
       <el-col :span="18">
         <iframe
-          src="https://www.google.com/maps/d/embed?mid=14pYTp5pZTDdRk8JfSjMMbtjQhoN9HkKp"
+          :src="$route.query.areaURL"
           width="100%"
           height="720"
           frameborder="0"
