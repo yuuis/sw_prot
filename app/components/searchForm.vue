@@ -17,15 +17,15 @@
         </el-checkbox-group>
       </el-form-item>
       <el-form-item label="年齢">
-        <el-checkbox-group v-model="searchForm.age">
-          <el-checkbox label="0才"></el-checkbox>
-          <el-checkbox label="1才"></el-checkbox>
-          <el-checkbox label="2才"></el-checkbox>
-          <el-checkbox label="3才"></el-checkbox>
-          <el-checkbox label="4才"></el-checkbox>
-          <el-checkbox label="5才"></el-checkbox>
-          <el-checkbox label="6才"></el-checkbox>
-        </el-checkbox-group>
+        <el-radio-group v-model="searchForm.age">
+          <el-radio :label="0">0才</el-radio>
+          <el-radio :label="1">1才</el-radio>
+          <el-radio :label="2">2才</el-radio>
+          <el-radio :label="3">3才</el-radio>
+          <el-radio :label="4">4才</el-radio>
+          <el-radio :label="5">5才</el-radio>
+          <el-radio :label="6">6才</el-radio>
+        </el-radio-group>
       </el-form-item>
       <el-form-item label="設備">
         <el-checkbox-group v-model="searchForm.option">
@@ -48,9 +48,9 @@ export default {
   data() {
     return {
       searchForm: {
-        type: ["", "", ""],
-        belongs: ["", "", ""],
-        age: ["", "", "", "", "", "", ""],
+        type: ["認可保育園", "", ""],
+        belongs: ["公立", "", ""],
+        age: 3,
         option: ["", "", "", ""]
       }
     };
