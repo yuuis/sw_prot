@@ -124,7 +124,14 @@
           <el-checkbox label="双生児以上の申込みの場合"></el-checkbox><br>
           <el-checkbox label="父又は母が単身赴任中の場合（雇用主の命令により、日常的に帰宅できず保育にあたれない場合に適用。自営業等を除く。）"></el-checkbox><br>
           <el-checkbox label="利用希望日において、就労実績が６か月以上ある場合"></el-checkbox><br>
+          <el-checkbox label="保護者のいずれかが、出産・育児のための休業から復職前提の場合。ただし、休業前の収入が最低賃金を下回る場合と休業前の就労実態がない場合は除く。（"></el-checkbox><br>
           <el-checkbox label="児童福祉法の観点から、特に配慮が必要と判断される場合"></el-checkbox><br>
+          <el-checkbox label="父母共に、特定医療費（指定難病）受給者証又は東京都難病医療費等助成の医療券（公費負担者番号が51、54、83で始まるものに限る。）が交付されている場合"></el-checkbox><br>
+          <el-checkbox label="父又は母に、特定医療費（指定難病）受給者証又は東京都難病医療費等助成の医療券（公費負担者番号が51、54、83で始まるものに限る。）が交付されている場合"></el-checkbox><br>
+          <el-checkbox label="同居の親族等が、補完的な保育にあたれる場合"></el-checkbox><br>
+          <el-checkbox label="同一世帯内に保育園利用申込みをしていない兄弟姉妹がいる場合"></el-checkbox><br>
+          <el-checkbox label="保護者のいずれかが、就労実績及び収入実績に整合性がないと判断される場合"></el-checkbox><br>
+          <el-checkbox label="過去３か月以上の保育料（区立保育室の保育料を含む。）の滞納（卒園児を含む。）がある場合"></el-checkbox><br>
         </el-checkbox-group>
       </el-form-item>
 
