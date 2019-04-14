@@ -8,12 +8,12 @@ export const state = () => ({
     {
       value: "渋谷区",
       label: "渋谷区",
-      mapurl: ""
+      mapurl: "https://www.google.com/maps/d/embed?mid=1IMNKNrdxbEQL8gao59b7wIixkf9XIdDD"
     },
     {
       value: "豊島区",
       label: "豊島区",
-      mapurl: ""
+      mapurl: "https://www.google.com/maps/d/embed?mid=1R4WBkNfveiLzNGAOOPjSuPBBzevsvuRy"
     }
   ]
 })

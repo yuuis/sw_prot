@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <search-header/>
+    <!-- <search-header/> -->
     <div class="breadcrumb">
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item :to="{ path: '/' }">TOP</el-breadcrumb-item>
@@ -14,7 +14,7 @@
       <el-col :span="18">
         <iframe
           :src="$route.query.areaURL"
-          width="100%"
+          width="1200"
           height="720"
           frameborder="0"
           style="border:0"
@@ -22,7 +22,7 @@
         ></iframe>
       </el-col>
       <el-col :span="6">
-        <member/>
+        <!-- <member/> -->
       </el-col>
     </el-row>
   </section>
@@ -52,11 +52,12 @@ export default {
 <style lang="scss">
 .el-carousel__item {
   h3 {
-    color: #475669;
+    color: orange;
     font-size: 18px;
     opacity: 0.75;
     line-height: 500px;
     margin: 0;
+    padding-bottom: 10%;
   }
   &:nth-child(2n) {
     background-color: #99a9bf;

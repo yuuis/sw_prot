@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$color: #00cf26;
+$color: orange;
 .contents {
   width: 90%;
   margin: 20px auto;

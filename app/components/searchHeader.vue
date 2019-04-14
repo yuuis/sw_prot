@@ -6,8 +6,8 @@
     </el-carousel-item>
     <div class="search-form">
       <el-form ref="form" :model="searchForm" label-width="120px" @submit.native.prevent="search">
-        <h3>保育園を検索</h3>
-        <el-form-item label="市区町村" required>
+        <h3>保育園を検索する</h3>
+        <el-form-item label="市区町村" required style="font-weight: bold">
           <el-select v-model="searchForm.area" placeholder="Select">
             <el-option
               v-for="opt in areaList"
@@ -17,10 +17,10 @@
             ></el-option>
           </el-select>
         </el-form-item>
-        <el-form-item label="お子さんの年齢">
-          <el-input-number v-model="searchForm.childAge" :min="0" :max="6"></el-input-number>才
+        <el-form-item label="お子さんの年齢" style="font-weight: bold">
+          <el-input-number v-model="searchForm.childAge" :min="0" :max="6"></el-input-number> <span style="color: gray"> 才 </span>
         </el-form-item>
-        <el-form-item label="入園希望月">
+        <el-form-item label="入園希望月" style="font-weight: bold">
           <el-date-picker v-model="searchForm.month" type="month" placeholder="Pick a month"></el-date-picker>
         </el-form-item>
         <el-form-item style="text-align:right;">
@@ -65,7 +65,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$background: #b8ffce;
+$background: gainsboro;
 .container {
   margin: 0 auto;
   text-align: center;
@@ -86,7 +86,7 @@ $background: #b8ffce;
       border-radius: 5px;
       backdrop-filter: blur(3px);
       z-index: 1400;
-      border: 1px solid #00cf26;
+      border: 1px solid orange;
       h3 {
         text-align: left;
         margin-left: 20px;
