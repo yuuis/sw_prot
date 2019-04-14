@@ -45,7 +45,8 @@ export default {
       nurseryImages: [
         // "http://angelchild.net/img/index_bigimg.jpg",
         // "http://kir302693.kir.jp/img/top/main_img.jpg"
-        "https://cdn.pixabay.com/photo/2016/11/28/10/48/child-1864718_960_720.jpg"
+        // "https://cdn.pixabay.com/photo/2016/11/28/10/48/child-1864718_960_720.jpg"
+        "https://cdn.pixabay.com/photo/2015/11/07/11/28/child-1031171_960_720.jpg"
       ]
     };
   },

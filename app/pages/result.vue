@@ -66,4 +66,7 @@ export default {
     background-color: #d3dce6;
   }
 }
+.el-main {
+  padding-bottom: 100px;
+}
 </style>
