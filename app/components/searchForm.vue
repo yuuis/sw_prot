@@ -70,7 +70,7 @@ export default {
     return {
       searchForm: {
         area:
-          "https://www.google.com/maps/d/embed?mid=14pYTp5pZTDdRk8JfSjMMbtjQhoN9HkKp",
+          "https://www.google.com/maps/d/embed?mid=1IMNKNrdxbEQL8gao59b7wIixkf9XIdDD",
         month: "",
         type: ["認可保育園", "", ""],
         belongs: ["公立", "", ""],
