@@ -20,6 +20,73 @@
           <el-option label="1000万以上" value="1000"></el-option>
         </el-select>
       </el-form-item>
+      <el-form-item label="就労時間(事業所)">
+        <el-select v-model="searchForm.income">
+          <el-option label="週5日以上かつ1日8時間以上" value="5/8-"></el-option>
+          <el-option label="週5日以上かつ1日6時間以上8時間未満" value="5/6-8"></el-option>
+          <el-option label="週5日以上かつ1日4時間以上6時間未満" value="5/4-6"></el-option>
+          <el-option label="週3日以上5日未満かつ1日8時間以上" value="3-5/8-"></el-option>
+          <el-option label="週3日以上5日未満かつ1日6時間以上8時間未満" value="3-5/6-8"></el-option>
+          <el-option label="週3日以上5日未満かつ1日4時間以上6時間未満" value="3-5/4-6"></el-option>
+          <el-option label="上記以外かつ月48時間以上" value="48"></el-option>
+          <el-option label="当てはまるものはない" value="0"></el-option>
+        </el-select>
+      </el-form-item>
+      <el-form-item label="就労時間(内職)">
+        <el-select v-model="searchForm.income">
+          <el-option label="週5日以上かつ1日6時間以上" value="5/6-"></el-option>
+          <el-option label="上記以外かつ月48時間以上" value="48"></el-option>
+          <el-option label="当てはまるものはない" value="0"></el-option>
+        </el-select>
+      </el-form-item>
+      <el-form-item label="出産">
+        <el-checkbox-group v-model="searchForm.type">
+          <el-checkbox label="保育実施期間は、出産予定月を中心に前後２か月（計５か月以内）"></el-checkbox><br>
+          <el-checkbox label="妊娠初期及び中期に長期間にわたって安静が必要な場合"></el-checkbox><br>
+        </el-checkbox-group>
+      </el-form-item>
+      <el-form-item label="疾病">
+        <el-checkbox-group v-model="searchForm.type">
+          <el-form-item label="入院">
+            <el-checkbox label="おおむね１か月以上の入院をしている、又は入院を決定した者"></el-checkbox><br>
+          </el-form-item>
+          <el-form-item label="居宅内">
+            <el-checkbox label="常時病臥・感染性"></el-checkbox><br>
+            <el-checkbox label="常時安静（寝たきりではないが、安静が必要で保育困難）"></el-checkbox><br>
+            <el-checkbox label="一般療養（通院加療を要する状態）"></el-checkbox><br>
+          </el-form-item>
+          <el-form-item label="精神性">
+            <el-checkbox label="症状が重度（精神障害者保健福祉手帳１級～３級相当）のため保育が困難な場合"></el-checkbox><br>
+            <el-checkbox label="症状が軽度（上記以外の場合）のため保育困難な場合"></el-checkbox><br>
+            <el-checkbox label="上記以外の場合で通院加療を要する状態"></el-checkbox><br>
+          </el-form-item>
+        </el-checkbox-group>
+      </el-form-item>
+      <el-form-item label="障害">
+        <el-checkbox-group v-model="searchForm.type">
+          <el-checkbox label="身体障害者手帳１級・２級、愛の手帳１度～３度、精神障害者保健福祉手帳３級以上"></el-checkbox><br>
+          <el-checkbox label="身体障害者手帳３級、愛の手帳４度"></el-checkbox><br>
+          <el-checkbox label="身体障害者手帳４級"></el-checkbox><br>
+        </el-checkbox-group>
+      </el-form-item>
+      <el-form-item label="介護">
+        <el-checkbox-group v-model="searchForm.type">
+          <el-form-item label="入院･施設等">
+            <el-checkbox label="常時病院･施設等で付添介護を必要とする場合"></el-checkbox><br>
+            <el-checkbox label="常時ではないが病院･施設等で付添を必要とする場合"></el-checkbox><br>
+          </el-form-item>
+          <el-form-item label="その他の介護">
+            <el-checkbox label="日常生活に全面的（食事･排泄･入浴等）介護を必要とする場合"></el-checkbox><br>
+            <el-checkbox label="日常生活において、身の回りの事はある程度できるが、しばしば介護を必要とする場合"></el-checkbox><br>
+            <el-checkbox label="上記以外の場合"></el-checkbox><br>
+          </el-form-item>
+        </el-checkbox-group>
+      </el-form-item>
+      <el-form-item label="災害">
+        <el-checkbox-group v-model="searchForm.type">
+          <el-checkbox label="災害等による家屋の損傷、その他災害復旧のため保育に当たることができない場合"></el-checkbox><br>
+        </el-checkbox-group>
+      </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="$router.push('/search')">登録する</el-button>
       </el-form-item>
