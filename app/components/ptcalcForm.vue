@@ -87,8 +87,49 @@
           <el-checkbox label="災害等による家屋の損傷、その他災害復旧のため保育に当たることができない場合"></el-checkbox><br>
         </el-checkbox-group>
       </el-form-item>
+
+      <el-form-item label="その他">
+        <el-checkbox-group v-model="searchForm.type">
+          <el-form-item label="求職">
+            <el-checkbox label="週５日以上就労し、８時間以上の就労を常態（おおむね月２０日以上）"></el-checkbox><br>
+            <el-checkbox label="週３日以上就労し、６時間以上の就労で上記に該当しない場合"></el-checkbox><br>
+            <el-checkbox label="週３日以上就労し、４時間以上の就労で上記に該当しない場合"></el-checkbox><br>
+            <el-checkbox label="求職のため、日中外出を常態（保育の実施期間は３か月）"></el-checkbox><br>
+          </el-form-item>
+          <el-form-item label="就学等">
+            <el-checkbox label="学校教育法に定める学校、専修学校等や職業訓練施設に通学･通所している場合等"></el-checkbox><br>
+            <el-checkbox label="日本語習得のため日本語学校に通学している場合"></el-checkbox><br>
+          </el-form-item>
+          <el-form-item label="不存在等">
+            <el-checkbox label="死亡･離婚･行方不明･拘禁等"></el-checkbox><br>
+          </el-form-item>
+          <el-form-item label="虐待等">
+            <el-checkbox label="虐待やDVのおそれがある場合など、社会的養護を必要とすると認められる場合"></el-checkbox><br>
+          </el-form-item>
+        </el-checkbox-group>
+      </el-form-item>
+
+      <el-form-item label="加減要素">
+        <el-checkbox-group v-model="searchForm.type">
+          <el-checkbox label="父母共に、身体障害者手帳１級・２級、愛の手帳１度～３度、精神障害者保健福祉手帳１～３級が交付されている場合"></el-checkbox><br>
+          <el-checkbox label="父又は母が、身体障害者手帳１級・２級、愛の手帳１度～３度、精神障害者保健福祉手帳１～３級が交付されている場合"></el-checkbox><br>
+          <el-checkbox label="父母共に、不存在（長期入院を含む。）の場合"></el-checkbox><br>
+          <el-checkbox label="父又は母が、不存在（長期入院を含む。）の場合かつ同居者なし"></el-checkbox><br>
+          <el-checkbox label="父又は母が、不存在（長期入院を含む。）の場合かつ同居者あり"></el-checkbox><br>
+          <el-checkbox label="生活保護世帯"></el-checkbox><br>
+          <el-checkbox label="同一世帯の同居者に、常時日常生活の全てにわたり介護が必要な者がいる場合"></el-checkbox><br>
+          <el-checkbox label="父母共に、求職中の場合"></el-checkbox><br>
+          <el-checkbox label="兄弟姉妹が既に在園している園を利用申込みする場合、又は兄弟姉妹が同じ園を同時に申込む場合"></el-checkbox><br>
+          <el-checkbox label="同居の児童が障害を有するために通所通院をしており、保護者の就労が制限されている場合（基本指数が２０の場合を除く。）"></el-checkbox><br>
+          <el-checkbox label="双生児以上の申込みの場合"></el-checkbox><br>
+          <el-checkbox label="父又は母が単身赴任中の場合（雇用主の命令により、日常的に帰宅できず保育にあたれない場合に適用。自営業等を除く。）"></el-checkbox><br>
+          <el-checkbox label="利用希望日において、就労実績が６か月以上ある場合"></el-checkbox><br>
+          <el-checkbox label="児童福祉法の観点から、特に配慮が必要と判断される場合"></el-checkbox><br>
+        </el-checkbox-group>
+      </el-form-item>
+
       <el-form-item>
-        <el-button type="primary" @click="$router.push('/search')">登録する</el-button>
+        <el-button type="primary" @click="$router.push('/search')">保存する</el-button>
       </el-form-item>
     </el-form>
   </div>

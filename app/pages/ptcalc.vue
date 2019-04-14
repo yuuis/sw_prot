@@ -12,7 +12,6 @@
         <ptcalc-form/>
       </el-col>
       <el-col :span="6">
-        <member/>
       </el-col>
     </el-row>
   </section>
