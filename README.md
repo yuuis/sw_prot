@@ -1,6 +1,6 @@
 # Nursery-Search
 
-> 保育園を検索できるWebサイト
+> 保育園を検索できるWebサイトのモックアップ
 
 ## Build Setup
 
