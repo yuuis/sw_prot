@@ -43,11 +43,8 @@ export default {
       },
 
       nurseryImages: [
-        // "http://angelchild.net/img/index_bigimg.jpg",
-        // "http://kir302693.kir.jp/img/top/main_img.jpg"
-        // "https://cdn.pixabay.com/photo/2016/11/28/10/48/child-1864718_960_720.jpg"
-        "https://cdn.pixabay.com/photo/2015/11/07/11/28/child-1031171_960_720.jpg"
-        // "https://cdn.pixabay.com/photo/2016/08/07/20/12/car-1577048_960_720.jpg"
+        // "https://cdn.pixabay.com/photo/2014/07/11/22/05/baby-390555_960_720.jpg"
+        "https://cdn.pixabay.com/photo/2015/09/02/13/19/holding-hands-918990_960_720.jpg"
       ]
     };
   },
